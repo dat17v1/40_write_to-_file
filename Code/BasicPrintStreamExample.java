@@ -25,7 +25,14 @@ public class BasicPrintStreamExample
             
             for(int i = 0; i < persons.size(); i++)
             {
+                // file.println();   
+                
                 file.print(persons.get(i).getName() + " " + persons.get(i).getLastName() + " " + persons.get(i).getAge() + " " + persons.get(i).getCpr());
+                
+                if(i != persons.size() -1)
+                {
+                    file.println();
+                }
             }
 
                 
