@@ -17,6 +17,10 @@ public class Person
         return name;
     }
 
+    public void setName(String name){
+        this.name = name;
+    }
+
     public String getLastName(){
         return lastName;
     }
@@ -26,4 +30,11 @@ public class Person
     public String getCpr(){
         return cpr;
     }
+
+    public String toString()
+    {
+        return name + " " + lastName + " " + age + " " + cpr;
+    }
+
+
 }
